@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: "sansation", sans-serif;
+}
+
+/* header then nav then main then footer */
+
+header {
+    background-color: black;
+    padding: 2rem;
+    text-align: center;
+}
+
+header span {
+    color: #e76113;
+    font-family: "chicle", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 0 5rem;
+}
+
+/*start of nav*/
+
+nav {
+    background-color: #532A8C;
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    border-radius: 10px;
+    background-color: #e76113;
+    margin: 10px 10px;
+    padding: 20px 50px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #220D40;
+    font-weight: 700;
+}
+
+nav li.active a {
+    color: #F2BB13;
+}
+
+nav li a:hover {
+    color: #eee;
+}
+
+/* start of main */
+
+main {
+    padding: 1rem 30px;
+    background-color: #220D40;
+}
+
+main h1 {
+    color: #F2BB13;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "chicle", sans-serif;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+main h2 {
+    color: #A2BF39;
+    font-family: "chicle", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: .5rem;
+}
+
+main p {
+    margin: 0 10px;
+    color: #aaa;
+    font-family: "sansation", sans-serif;
+}
+
+main ol {
+    padding: .5rem 30px;
+    color: #aaa;
+    font-family: "sansation", sans-serif;
+}
+
+main ol li {
+    padding: 10px 0;
+}
+
+main h3 {
+    color: #F2BB13;
+    margin: 0 30px;
+    font-family: "sansation", sans-serif;
+}
+
+main dl dt {
+    color: #aaa;
+    font-weight: 700;
+    margin: 1rem;
+    font-family: "sansation", sans-serif;
+}
+
+main dl dd {
+    color: #aaa;
+    font-size: .9rem;
+    margin-left: 50px;
+    font-family: "sansation", sans-serif;
+}
+
+main ul {
+    list-style-type: circle;
+    color: #eee;
+    font-family: "sansation", sans-serif;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main strong {
+    font-weight: 700;
+    color: #eee;
+}
+
+main dt strong {
+    color: #e76113;
+}
+
+main em {
+    font-weight: 300;
+    color: #eee;
+}
+
+main address {
+    background-color: #e76113;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 2px solid #F2BB13;
+    font-family: "sansation", sans-serif;
+    width: 500px;
+    color: #000;
+}
+
+main a {
+    color: #eee;
+}
+
+main a:hover {
+    color: #F2BB13;
+}
+
+/* image stuff */
+
+figure.glamrock {
+    margin: 0 0 0 30px;
+    width: 50%;
+    float: right;
+    }
+
+figure.glamrock img {
+    border-radius: 10px;
+    border: 3px solid #e76113;
+    width: 100%;
+    height: auto;
+}
+
+figure.glamrock figcaption {
+    font-family: "sansation", sans-serif;
+    color: #aaa;
+    font-size: .7rem;
+    text-align: center;
+}
+
+/* attraction gallery stuff */
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+}
+
+div.gallery figure {
+    margin: 0 0 0 20px;
+}
+
+div.gallery figure img {
+    border: 3px solid #A2BF39;
+    border-radius: 10px;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #aaa;
+}
+
+/* footer start */
+
+footer {
+    background-color: black;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #aaa;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: "sansation", sans-serif;
+    font-weight: 700;
+}
