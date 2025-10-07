@@ -1,0 +1,350 @@
+/* for small screens and big screens */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "sansation", sans-serif;
+}
+
+/* header then nav then main then footer */
+
+header {
+    background-color: black;
+    padding: 2rem;
+    text-align: center;
+}
+
+header span {
+    color: #e76113;
+    font-family: "chicle", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 0 5rem;
+}
+
+/*start of nav*/
+
+nav {
+    background-color: #532A8C;
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    border-radius: 10px;
+    background-color: #e76113;
+    margin: 10px 10px;
+    padding: 20px 50px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #220D40;
+    font-weight: 700;
+}
+
+nav li.active a {
+    color: #F2BB13;
+}
+
+nav li a:hover {
+    color: #eee;
+}
+
+/* small nav */
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        color: #220D40;
+        font-size:1.5rem;
+        text-decoration: none;
+    }
+    nav .active a {
+        color: white;
+    }
+
+} /* end small */
+
+/* LARGE nav */
+
+@media only screen and (min-width: 801px) {
+   
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: #220D40;
+        text-align: center;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+
+} /* end LARGE */
+
+/* start of main */
+
+main {
+    padding: 1rem 30px;
+    background-color: #220D40;
+    background-image: linear-gradient(to bottom, #220D40, #3a0d40);
+
+}
+
+main h1 {
+    color: #F2BB13;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "chicle", sans-serif;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+main h2 {
+    color: #A2BF39;
+    font-family: "chicle", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: .5rem;
+}
+
+main p {
+    margin: 0 10px;
+    color: #aaa;
+    font-family: "sansation", sans-serif;
+}
+
+main ol {
+    padding: .5rem 30px;
+    color: #aaa;
+    font-family: "sansation", sans-serif;
+}
+
+main ol li {
+    padding: 10px 0;
+}
+
+main h3 {
+    color: #F2BB13;
+    margin: 0 30px;
+    font-family: "sansation", sans-serif;
+}
+
+main dl dt {
+    color: #aaa;
+    font-weight: 700;
+    margin: 1rem;
+    font-family: "sansation", sans-serif;
+}
+
+main dl dd {
+    color: #aaa;
+    font-size: .9rem;
+    margin-left: 50px;
+    font-family: "sansation", sans-serif;
+}
+
+main ul {
+    list-style-type: circle;
+    color: #eee;
+    font-family: "sansation", sans-serif;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main strong {
+    font-weight: 700;
+    color: #eee;
+}
+
+main dt strong {
+    color: #e76113;
+}
+
+main em {
+    font-weight: 300;
+    color: #eee;
+}
+
+main address {
+    background-color: #e76113;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 2px solid #F2BB13;
+    font-family: "sansation", sans-serif;
+    width: 500px;
+    color: #000;
+}
+
+main a {
+    color: #eee;
+}
+
+main a:hover {
+    color: #F2BB13;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #A2BF39;
+}
+
+/* image stuff */
+
+figure.glamrock {
+    margin: 0 0 0 30px;
+    width: 50%;
+    float: right;
+}
+
+figure.glamrock img {
+    border-radius: 10px;
+    border: 3px solid #e76113;
+    width: 100%;
+    height: auto;
+}
+
+figure.glamrock figcaption {
+    font-family: "sansation", sans-serif;
+    color: #aaa;
+    font-size: .7rem;
+    text-align: center;
+}
+
+/* attraction gallery stuff */
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+}
+
+div.gallery figure {
+    margin: 0 0 0 20px;
+}
+
+div.gallery figure img {
+    border: 3px solid #A2BF39;
+    border-radius: 10px;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #aaa;
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(214, 181, 226, 0.668);
+}
+
+/* form stuff here */
+
+.ticket fieldset {
+    border: 2px solid #A2BF39;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.ticket legend {
+    color: #e76113;
+    font-size: .9rem;
+}
+
+.ticket label {
+    margin: .8rem;
+    color: #eee;
+}
+
+.ticket label,
+.ticket select,
+.ticket [type=text],
+.ticket [type=tel],
+.ticket [type=email],
+.ticket textarea {
+    display: block;
+}
+
+.ticket [type=text],
+.ticket [type=tel],
+.ticket [type=email],
+.ticket select,
+.ticket textarea {
+    border: solid 1px #aaa;
+    padding: .3rem;
+    width: 200px;
+    border-radius: 10px;
+    font-family: "sansation", sans-serif;
+    font-weight: 500;
+}
+
+.ticket textarea {
+    height: 6rem;
+    margin: .5rem 0 0 0;
+}
+
+.ticket :required {
+    background-color: #e7611340;
+}
+
+.ticket [type=submit] {
+    background-color: #e76113;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #220D40;
+    font-family: "sansation", sans-serif;
+    margin: 1rem 0 0 1vw;
+}
+
+.ticket [type=submit]:hover {
+    color: #eee;
+}
+
+/* footer start */
+
+footer {
+    background-color: black;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #aaa;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: "sansation", sans-serif;
+    font-weight: 700;
+}
+
+header, nav, main, footer {
+    max-width: 90rem;
+    margin: 0 auto;
+}
