@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Riley Oborn">
+    <meta name="description" content="Learn about the Declaration of Independence of the United States">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>FEI: Freddy Fazbear's Mega Pizzaplex - Tickets</title>
+</head>
+
+<body>
+
+    <!-- start the page head; this is company name, not page name -->
+
+    <header>
+        <img src="images/logo.png" alt="Logo for Fazbear Entertainment Incorporated" width="73" height="50">
+        <span>Fazbear Entertainment Incorporated: Freddy Fazbear's Mega Pizzaplex</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="shopping.html">Shopping</a></li>
+            <li class="active"><a href="tickets.html">Tickets</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main> <!-- page name goes here -->
+        <h1>Purchase Tickets:</h1>
+
+        <form method="get" class="ticket" action="thanks.html">
+
+            <fieldset>
+                <legend>Billing Information</legend>
+                <label>First Name *<input type="text" name="fname" required></label>
+                <label>Last Name *<input type="text" name="lname" required></label>
+                <label>Cell Number *<input type="tel" name="phone" required placeholder="101-202-3034"></label>
+                <label>Email *<input type="email" name="email" required></label>
+                <label>Address *<input type="text" name="address" required></label>
+                <label>City *<input type="text" name="city" required></label>
+                <label>State *<input type="text" name="state" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ticket Order</legend>
+                <label>Pass Options
+                    <select name="time">
+                        <option value="none">Please Choose</option>
+                        <option value="standard">Standard Pass - $120</option>
+                        <option value="return">Return Pass - $150</option>
+                        <option value="vip">VIP Pass - $185</option>
+                        <option value="luxury">Luxury Pass - $210</option>
+                    </select>
+                </label>
+
+                <label><input type="checkbox" name="bday" value="chosen">Birthday Addition</label>
+                <label><input type="checkbox" name="date" value="chosen">Date Night Addition</label>
+                <label><input type="checkbox" name="anniversary" value="chosen">Anniversary Addition</label>
+                <label><input type="checkbox" name="grad" value="chosen">Graduation Addition</label>
+                <label><input type="checkbox" name="party" value="chosen">Party Pass Addition</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mailing Options</legend>
+                <label><input type="radio" name="method" value="standard">Standard Delivery (3-5 business days)</label>
+                <label><input type="radio" name="method" value="express">Express Delivery (1-2 business days)</label>
+                <label><input type="radio" name="method" value="sameday">Same-Day Delivery (0-1 business days)</label>
+            </fieldset>
+
+            <label>Any Further Requests?
+                <textarea name="request"></textarea>
+            </label>
+
+            <input type="submit" value="Purchase Tickets">
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 &bull; Riley Oborn &bull; Web Essentials</p>
+    </footer>
+
+</body>
+
+</html>
